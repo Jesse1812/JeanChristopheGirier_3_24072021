@@ -1,20 +1,34 @@
+/* GENERAL */
+* {
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 200;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
 @media only screen and (max-width: 360px) {
-  /* GENERAL */
-  * {
-    width: 100%;
-    margin: 0;
-  }
-  h1 {
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-  h2 {
-    font-size: 1em;
-    font-weight: 200;
-  }
-  h3 {
-    font-weight: bold;
-  }
   #restaurants img {
     width: 100%;
     height: 150px;
@@ -26,29 +40,37 @@
     width: 50%;
     margin: auto;
     margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
   }
   #localisation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: bold;
     background-color: grey;
-    height: 40px;
-    text-align: center;
+    height: 30px;
+    padding-top: 10px;
   }
   /* PRESENTATION */
   #presentation {
     margin: auto;
     text-align: center;
-    background-color: lightgray;
-    height: 120px;
+    height: 150px;
   }
   #presentation button {
     height: 40px;
-    background-color: yellowgreen;
+    background-color: #ff79da;
     color: white;
     border-radius: 50px;
     border: 1px solid white;
     font-weight: bold;
     width: 60%;
-    -webkit-box-shadow: 1px 10px 5px grey;
-            box-shadow: 1px 10px 5px grey;
+    -webkit-box-shadow: 1px 5px 5px grey;
+            box-shadow: 1px 5px 5px grey;
   }
   /*FONCTIONNEMENT*/
   .numero {
@@ -66,9 +88,32 @@
     margin-bottom: 10px;
     margin-top: 5px;
   }
+  #fonctionnement {
+    margin: 30px 0 50px 0;
+  }
+  /* LISTE DES RESTAURANTS */
+  .carte {
+    -webkit-box-shadow: 1px 3px 3px lightgrey;
+            box-shadow: 1px 3px 3px lightgrey;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  #restaurants img {
+    border-radius: 20px 20px 0 0;
+  }
+  .carte h3 {
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+  .carte p {
+    margin-left: 10px;
+  }
   /*FOOTER*/
   footer {
     background-color: darkgrey;
+    margin-top: 30px;
+    padding: 10px 0 30px 0;
+    width: 100%;
   }
   footer p {
     color: white;
