@@ -55,7 +55,7 @@ p {
   }
   #presentation button {
     height: 40px;
-    background-color: #ff79da;
+    background: linear-gradient(#ff79da, #584274);
     color: white;
     border-radius: 50px;
     border: 1px solid white;
@@ -68,7 +68,8 @@ p {
 
   .numero {
     position: absolute;
-    margin-top: 10px;
+    margin-top: 12px;
+    margin-left: -10px;
   }
   .numero img {
     width: 8%;
@@ -84,7 +85,7 @@ p {
     height: 50px;
     background-color: lightgrey;
     border-radius: 20px;
-    border: 1px solid white;
+    border: 0 solid white;
     font-weight: bold;
     font-size: 0.8em;
     box-shadow: 1px 5px 5px grey;
@@ -126,6 +127,11 @@ p {
   .carte p {
     margin-left: 10px;
     margin-bottom: 10px;
+  }
+  .coeur {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
   }
 
   /*FOOTER*/
