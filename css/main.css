@@ -20,8 +20,9 @@ h2 {
 }
 
 h3 {
+  font-size: 1em;
   font-weight: bold;
-  margin: 10px 0 10px 0;
+  margin: 10px 0 10px 5px;
 }
 
 p {
@@ -68,25 +69,54 @@ p {
     border-radius: 50px;
     border: 1px solid white;
     font-weight: bold;
-    width: 60%;
+    width: 70%;
     -webkit-box-shadow: 1px 5px 5px grey;
             box-shadow: 1px 5px 5px grey;
   }
   /*FONCTIONNEMENT*/
   .numero {
-    margin: auto;
-    width: 80%;
+    position: absolute;
+    margin-top: 10px;
   }
-  #fonctionnement button {
+  .numero img {
+    width: 8%;
+    height: 8%;
+    filter: hue-rotate(60deg);
+    -webkit-filter: hue-rotate(60deg);
+  }
+  .bouton {
+    width: 90%;
+    margin: auto;
+  }
+  .bouton button {
     height: 50px;
     background-color: lightgrey;
     border-radius: 20px;
     border: 1px solid white;
     font-weight: bold;
+    font-size: 0.8em;
     -webkit-box-shadow: 1px 5px 5px grey;
             box-shadow: 1px 5px 5px grey;
     margin-bottom: 10px;
     margin-top: 5px;
+  }
+  .bouton button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .font i {
+    color: grey;
+  }
+  .font3 i {
+    color: #9356dc;
+  }
+  .font,
+  .font3 {
+    width: 20%;
   }
   #fonctionnement {
     margin: 30px 0 50px 0;
@@ -107,12 +137,13 @@ p {
   }
   .carte p {
     margin-left: 10px;
+    margin-bottom: 10px;
   }
   /*FOOTER*/
   footer {
-    background-color: darkgrey;
+    background-color: #a9a9a9;
     margin-top: 30px;
-    padding: 10px 0 30px 0;
+    padding: 10px 10px 30px 5px;
     width: 100%;
   }
   footer p {
@@ -121,6 +152,17 @@ p {
   #logo_blanc {
     width: 25%;
     margin: 10px 0 10px 0;
+  }
+  .pied {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer p {
+    width: 800%;
+  }
+  footer i {
+    color: white;
   }
 }
 /*# sourceMappingURL=main.css.map */
