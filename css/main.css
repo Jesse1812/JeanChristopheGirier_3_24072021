@@ -29,149 +29,254 @@ p {
   margin-bottom: 5px;
 }
 
+/* HEADER */
+header {
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: auto;
+}
+
+#localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  background-color: lightgray;
+  height: 30px;
+  padding-top: 10px;
+  width: 50%;
+  margin: auto;
+}
+
+#localisation i {
+  text-align: right;
+  padding-right: 10px;
+  width: 40%;
+}
+
+#localisation h5 {
+  text-align: left;
+  width: 60%;
+}
+
+/* PRESENTATION */
+#presentation {
+  margin: auto;
+  text-align: center;
+  height: 150px;
+}
+
+#presentation button {
+  height: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#584274));
+  background: linear-gradient(#ff79da, #584274);
+  color: white;
+  border-radius: 50px;
+  border: 1px solid white;
+  font-weight: bold;
+  width: 30%;
+  -webkit-box-shadow: 1px 5px 5px grey;
+          box-shadow: 1px 5px 5px grey;
+  margin-top: 10px;
+}
+
+/*FONCTIONNEMENT*/
+.numero {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+
+.numero img {
+  width: 4%;
+  height: 4%;
+  filter: hue-rotate(60deg);
+  -webkit-filter: hue-rotate(60deg);
+}
+
+.bouton button {
+  height: 50px;
+  background-color: lightgrey;
+  border-radius: 20px;
+  border: 0 solid white;
+  font-weight: bold;
+  font-size: 0.8em;
+  -webkit-box-shadow: 1px 5px 5px grey;
+          box-shadow: 1px 5px 5px grey;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.font i {
+  color: grey;
+}
+
+.font3 i {
+  color: #9356dc;
+}
+
+.font,
+.font3 {
+  width: 40%;
+}
+
+#fonctionnement {
+  margin: 30px 0 50px 0;
+}
+
+#fonctionnement h3 {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+#fonctionnement .bouton {
+  width: 30%;
+  margin: auto;
+}
+
+/* LISTE DES RESTAURANTS */
+.carte {
+  -webkit-box-shadow: 1px 3px 3px lightgrey;
+          box-shadow: 1px 3px 3px lightgrey;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  width: 60%;
+  margin: auto;
+}
+
+.carte h4 {
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.carte p {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.carte .coeur {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#restaurants img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#restaurants h3 {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #202020;
+  margin-top: 30px;
+  padding: 10px 10px 30px 20px;
+  width: 60%;
+  margin: auto;
+}
+
+footer p {
+  color: white;
+  width: 95%;
+}
+
+footer i {
+  color: white;
+  width: 5%;
+}
+
+#logo_blanc {
+  width: 25%;
+  margin: 10px 0 10px 0;
+}
+
+.pied {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media only screen and (max-width: 360px) {
-  #restaurants img {
-    width: 100%;
-    height: 150px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   /* HEADER */
   header {
-    width: 50%;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
     height: 30px;
   }
   #localisation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-weight: bold;
-    background-color: grey;
-    height: 30px;
-    padding-top: 10px;
+    height: 25px;
+    width: 100%;
   }
   /* PRESENTATION */
-  #presentation {
-    margin: auto;
-    text-align: center;
-    height: 150px;
-  }
   #presentation button {
-    height: 40px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#584274));
-    background: linear-gradient(#ff79da, #584274);
-    color: white;
-    border-radius: 50px;
-    border: 1px solid white;
-    font-weight: bold;
     width: 70%;
-    -webkit-box-shadow: 1px 5px 5px grey;
-            box-shadow: 1px 5px 5px grey;
   }
   /*FONCTIONNEMENT*/
   .numero {
-    position: absolute;
     margin-top: 12px;
     margin-left: -10px;
   }
   .numero img {
     width: 8%;
     height: 8%;
-    filter: hue-rotate(60deg);
-    -webkit-filter: hue-rotate(60deg);
-  }
-  .bouton {
-    width: 90%;
-    margin: auto;
-  }
-  .bouton button {
-    height: 50px;
-    background-color: lightgrey;
-    border-radius: 20px;
-    border: 0 solid white;
-    font-weight: bold;
-    font-size: 0.8em;
-    -webkit-box-shadow: 1px 5px 5px grey;
-            box-shadow: 1px 5px 5px grey;
-    margin-bottom: 10px;
-    margin-top: 5px;
-  }
-  .bouton button {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .font i {
-    color: grey;
-  }
-  .font3 i {
-    color: #9356dc;
   }
   .font,
   .font3 {
     width: 20%;
   }
-  #fonctionnement {
-    margin: 30px 0 50px 0;
+  #fonctionnement h3 {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  #fonctionnement .bouton {
+    width: 90%;
   }
   /* LISTE DES RESTAURANTS */
   .carte {
-    -webkit-box-shadow: 1px 3px 3px lightgrey;
-            box-shadow: 1px 3px 3px lightgrey;
-    border-radius: 20px;
-    margin-bottom: 20px;
-  }
-  #restaurants img {
-    border-radius: 20px 20px 0 0;
+    width: 100%;
   }
   .carte h3 {
     margin-left: 10px;
     margin-bottom: 0;
+    text-align: left;
   }
   .carte p {
     margin-left: 10px;
     margin-bottom: 10px;
   }
-  .coeur {
+  .carte .coeur {
     margin-left: 10px;
     margin-bottom: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  /*FOOTER*/
+  #restaurants h3 {
+    text-align: left;
+  }
+  /* FOOTER */
   footer {
-    background-color: #a9a9a9;
-    margin-top: 30px;
-    padding: 10px 10px 30px 5px;
     width: 100%;
   }
-  footer p {
-    color: white;
-  }
-  #logo_blanc {
-    width: 25%;
-    margin: 10px 0 10px 0;
-  }
-  .pied {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  footer p {
-    width: 800%;
-  }
   footer i {
-    color: white;
+    padding-right: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */

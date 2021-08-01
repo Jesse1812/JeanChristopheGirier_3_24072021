@@ -24,83 +24,195 @@ h3 {
 p {
   margin-bottom: 5px;
 }
-@media only screen and (max-width: 360px) {
-  #restaurants img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-  /* HEADER */
-  header {
-    width: 50%;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 30px;
-  }
-  #localisation {
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    background-color: grey;
-    height: 30px;
-    padding-top: 10px;
-  }
 
-  /* PRESENTATION */
-  #presentation {
-    margin: auto;
-    text-align: center;
-    height: 150px;
+/* HEADER */
+header {
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: auto;
+}
+#localisation {
+  display: flex;
+  font-weight: bold;
+  background-color: lightgray;
+  height: 30px;
+  padding-top: 10px;
+  width: 50%;
+  margin: auto;
+
+  i {
+    text-align: right;
+    padding-right: 10px;
+    width: 40%;
   }
-  #presentation button {
+  h5 {
+    text-align: left;
+    width: 60%;
+  }
+}
+
+/* PRESENTATION */
+#presentation {
+  margin: auto;
+  text-align: center;
+  height: 150px;
+
+  button {
     height: 40px;
     background: linear-gradient(#ff79da, #584274);
     color: white;
     border-radius: 50px;
     border: 1px solid white;
     font-weight: bold;
-    width: 70%;
+    width: 30%;
     box-shadow: 1px 5px 5px grey;
+    margin-top: 10px;
+  }
+}
+
+/*FONCTIONNEMENT*/
+.numero {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 0px;
+
+  img {
+    width: 4%;
+    height: 4%;
+    filter: hue-rotate(60deg);
+    -webkit-filter: hue-rotate(60deg);
+  }
+}
+.bouton button {
+  height: 50px;
+  background-color: lightgrey;
+  border-radius: 20px;
+  border: 0 solid white;
+  font-weight: bold;
+  font-size: 0.8em;
+  box-shadow: 1px 5px 5px grey;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+.font i {
+  color: grey;
+}
+.font3 i {
+  color: #9356dc;
+}
+.font,
+.font3 {
+  width: 40%;
+}
+
+#fonctionnement {
+  margin: 30px 0 50px 0;
+
+  h3 {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+
+  .bouton {
+    width: 30%;
+    margin: auto;
+  }
+}
+
+/* LISTE DES RESTAURANTS */
+.carte {
+  box-shadow: 1px 3px 3px lightgrey;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  width: 60%;
+  margin: auto;
+
+  h4 {
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .coeur {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+  }
+}
+#restaurants img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+#restaurants h3 {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/*FOOTER*/
+footer {
+  background-color: rgb(32, 32, 32);
+  margin-top: 30px;
+  padding: 10px 10px 30px 20px;
+  width: 60%;
+  margin: auto;
+
+  p {
+    color: white;
+    width: 95%;
+  }
+
+  i {
+    color: white;
+    width: 5%;
+  }
+}
+#logo_blanc {
+  width: 25%;
+  margin: 10px 0 10px 0;
+}
+.pied {
+  display: flex;
+}
+
+@media only screen and (max-width: 360px) {
+  /* HEADER */
+  header {
+    height: 30px;
+  }
+  #localisation {
+    height: 25px;
+    width: 100%;
+  }
+
+  /* PRESENTATION */
+  #presentation {
+    button {
+      width: 70%;
+    }
   }
 
   /*FONCTIONNEMENT*/
 
   .numero {
-    position: absolute;
     margin-top: 12px;
     margin-left: -10px;
-  }
-  .numero img {
-    width: 8%;
-    height: 8%;
-    filter: hue-rotate(60deg);
-    -webkit-filter: hue-rotate(60deg);
-  }
-  .bouton {
-    width: 90%;
-    margin: auto;
-  }
-  .bouton button {
-    height: 50px;
-    background-color: lightgrey;
-    border-radius: 20px;
-    border: 0 solid white;
-    font-weight: bold;
-    font-size: 0.8em;
-    box-shadow: 1px 5px 5px grey;
-    margin-bottom: 10px;
-    margin-top: 5px;
-  }
-  .bouton button {
-    display: flex;
-    align-items: center;
-  }
-  .font i {
-    color: grey;
-  }
-  .font3 i {
-    color: #9356dc;
+
+    img {
+      width: 8%;
+      height: 8%;
+    }
   }
   .font,
   .font3 {
@@ -108,53 +220,45 @@ p {
   }
 
   #fonctionnement {
-    margin: 30px 0 50px 0;
+    h3 {
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    .bouton {
+      width: 90%;
+    }
   }
 
   /* LISTE DES RESTAURANTS */
   .carte {
-    box-shadow: 1px 3px 3px lightgrey;
-    border-radius: 20px;
-    margin-bottom: 20px;
+    width: 100%;
+
+    h3 {
+      margin-left: 10px;
+      margin-bottom: 0;
+      text-align: left;
+    }
+
+    p {
+      margin-left: 10px;
+      margin-bottom: 10px;
+    }
+
+    .coeur {
+      margin-left: 10px;
+      margin-bottom: 10px;
+      display: flex;
+    }
   }
-  #restaurants img {
-    border-radius: 20px 20px 0 0;
-  }
-  .carte h3 {
-    margin-left: 10px;
-    margin-bottom: 0;
-  }
-  .carte p {
-    margin-left: 10px;
-    margin-bottom: 10px;
-  }
-  .coeur {
-    margin-left: 10px;
-    margin-bottom: 10px;
-    display: flex;
+  #restaurants h3 {
+    text-align: left;
   }
 
-  /*FOOTER*/
+  /* FOOTER */
   footer {
-    background-color: #a9a9a9;
-    margin-top: 30px;
-    padding: 10px 10px 30px 5px;
     width: 100%;
-  }
-  footer p {
-    color: white;
-  }
-  #logo_blanc {
-    width: 25%;
-    margin: 10px 0 10px 0;
-  }
-  .pied {
-    display: flex;
-  }
-  footer p {
-    width: 800%;
-  }
-  footer i {
-    color: white;
+    i {
+      padding-right: 10px;
+    }
   }
 }
