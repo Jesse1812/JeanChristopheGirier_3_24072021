@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/pages.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,83 +22,101 @@
 
   <body>
     <header>
-      <div class="font"></div>
+      <div class="font"><i class="fas fa-arrow-left"></i></div>
       <img src="images/ohmyfood.png" alt="Oh my food" />
     </header>
+
+    <img
+      src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+      alt="a-la-francaise"
+    />
+
     <section id="menu">
-      <h2>A la française</h2>
-      <div class="coeur"></div>
+      <div class="titre">
+        <h1>A la française</h1>
+        <i class="fas fa-heart"></i>
+      </div>
       <div class="entrees">
-        <h4>Entrées</h4>
-        <div>
-          <h6>Tartare de poulpe acidulé</h6>
-          <p>Aux zests d'orange</p>
+        <h2>Entrées</h2>
+        <div id="trait"></div>
+        <div class="carte">
+          <h4>Tartare de poulpe acidulé</h4>
+          <h5>Aux zests d'orange</h5>
           <div class="prix">25€</div>
           <div class="validation"></div>
         </div>
-        <div>
-          <h6>Velouté de légumes d'antan</h6>
-          <p>Carotte, panais, topinambour</p>
+        <div class="carte">
+          <h4>Velouté de légumes d'antan</h4>
+          <h5>Carotte, panais, topinambour</h5>
           <div class="prix">35€</div>
           <div class="validation"></div>
         </div>
-        <div>
-          <h6>Soupe à l'oignon</h6>
-          <p>Revisitée</p>
-          <div class="prix"></div>
-          <div class="validation">20€</div>
+        <div class="carte">
+          <h4>Soupe à l'oignon</h4>
+          <h5>Revisitée</h5>
+          <div class="prix">20€</div>
+          <div class="validation"></div>
         </div>
       </div>
       <div class="plats">
-        <h4>plats</h4>
+        <h2>plats</h2>
+        <div id="trait"></div>
         <div class="coeur"></div>
-        <div>
-          <h6>Coquilles St Jacques</h6>
-          <p>Accompagnées d'une purée de panais</p>
-          <div class="prix"></div>
-          <div class="validation">40€</div>
+        <div class="carte">
+          <h4>Coquilles St Jacques</h4>
+          <h5>Accompagnées d'une purée de panais</h5>
+          <div class="prix">40€</div>
+          <div class="validation"></div>
         </div>
-        <div>
-          <h6>Magret de canard</h6>
-          <p>Et Parmentier de pommes de terre</p>
-          <div class="prix"></div>
-          <div class="validation">35€</div>
+        <div class="carte">
+          <h4>Magret de canard</h4>
+          <h5>Et Parmentier de pommes de terre</h5>
+          <div class="prix">35€</div>
+          <div class="validation"></div>
         </div>
-        <div>
-          <h6>Pigeonneau d'Ille-et-Vilaine</h6>
-          <p>Sur son lit de gnocchis aux légumes</p>
-          <div class="prix"></div>
-          <div class="validation">44€</div>
+        <div class="carte">
+          <h4>Pigeonneau d'Ille-et-Vilaine</h4>
+          <h5>Sur son lit de gnocchis aux légumes</h5>
+          <div class="prix">44€</div>
+          <div class="validation"></div>
         </div>
       </div>
       <div class="desserts">
-        <h4>desserts</h4>
+        <h2>desserts</h2>
+        <div id="trait"></div>
         <div class="coeur"></div>
-        <div>
-          <h6>Pétales de violette glacés</h6>
-          <p>Et purée de noisettes</p>
-          <div class="prix"></div>
-          <div class="validation">18€</div>
+        <div class="carte">
+          <h4>Pétales de violette glacés</h4>
+          <h5>Et purée de noisettes</h5>
+          <div class="prix">18€</div>
+          <div class="validation"></div>
         </div>
-        <div>
-          <h6>Fondant au chocolat</h6>
-          <p>Revisité</p>
-          <div class="prix"></div>
-          <div class="validation">22€</div>
+        <div class="carte">
+          <h4>Fondant au chocolat</h4>
+          <h5>Revisité</h5>
+          <div class="prix">22€</div>
+          <div class="validation"></div>
         </div>
-        <div>
-          <h6>Millefeuille croustillant</h6>
-          <p>Myrtilles et pâte d'amande</p>
-          <div class="prix"></div>
-          <div class="validation">23€</div>
+        <div class="carte">
+          <h4>Millefeuille croustillant</h4>
+          <h5>Myrtilles et pâte d'amande</h5>
+          <div class="prix">23€</div>
+          <div class="validation"></div>
         </div>
       </div>
       <button>Commander</button>
     </section>
+
     <footer>
-      <img src="images/ohmyfood@2x.svg" />
-      <p>Proposer un restaurant</p>
-      <p>Devenir partenaire</p>
+      <img src="images/ohmyfood@2x.svg" alt="logo" id="logo_blanc" />
+      <div class="pied">
+        <i class="fas fa-utensils"></i>
+        <p>Proposer un restaurant</p>
+      </div>
+      <div class="pied">
+        <i class="fas fa-hands-helping"></i>
+        <p>Devenir partenaire</p>
+      </div>
       <p>Mentions légales</p>
       <p>Contact</p>
     </footer>
