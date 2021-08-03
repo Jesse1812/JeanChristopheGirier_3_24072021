@@ -1,3 +1,8 @@
+/* variables Sass */
+$color-violet: #9356dc;
+$color-rose: #ff79da;
+$color-bleu: #99e2d0;
+
 /* GENERAL */
 * {
   width: 100%;
@@ -7,26 +12,29 @@
 h1 {
   font-size: 1em;
   font-weight: bold;
-  font-style: italic;
   font-family: "Shrikhand", cursive;
   margin-top: 10px;
   margin-bottom: 5px;
+  margin-left: 10px;
 }
 h2 {
   font-size: 0.9em;
   font-weight: 500;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 10px;
   text-transform: uppercase;
 }
 h4 {
   font-size: 1em;
   font-weight: bold;
+  color: black;
 }
 h5 {
   margin-bottom: 5px;
   font-size: 0.8em;
   font-weight: 100;
+  color: black;
 }
 
 a {
@@ -36,13 +44,6 @@ a {
   &:link {
     color: white;
   }
-}
-#menu {
-  background-color: whitesmoke;
-  border-top: 1px solid grey;
-  border-radius: 20px;
-  margin-top: -40px;
-  position: relative;
 }
 
 /* HEADER */
@@ -65,14 +66,26 @@ header {
 }
 
 /* MENUS */
-.titre {
-  margin: auto;
+#menu {
+  background-color: whitesmoke;
+  border-top: 1px solid grey;
+  border-radius: 20px;
+  margin-top: -50px;
+  position: relative;
+}
+.pleine-largeur {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+
+  i {
+    text-align: right;
+    margin-right: 20px;
+  }
 }
 #trait {
-  border-bottom: 3px solid #99e2d0;
+  border-bottom: 3px solid $color-bleu;
   width: 10%;
+  margin-left: 10px;
 }
 
 .carte {
@@ -82,8 +95,8 @@ header {
   padding-bottom: 10px;
   padding-top: 10px;
   width: 60%;
-  margin: auto;
-  margin-top: 15px;
+  margin: 15px 10px 10px 10px;
+  background-color: white;
 
   h4 {
     margin-left: 10px;
@@ -92,22 +105,25 @@ header {
 
   h5 {
     margin-left: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
-  .coeur {
-    margin-left: 10px;
-    margin-bottom: 10px;
-    display: flex;
-  }
-  .prix {
-    margin-left: 10px;
+  .pleine-largeur {
+    align-items: flex-end;
   }
 }
+
+.prix {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+  padding-right: 25px;
+}
+
 button {
   height: 40px;
   width: 30%;
-  background: linear-gradient(#ff79da, #584274);
+  background: linear-gradient($color-rose, $color-violet);
   color: white;
   border-radius: 50px;
   border: 0 solid white;

@@ -1,3 +1,4 @@
+/* variables Sass */
 /* GENERAL */
 * {
   width: 100%;
@@ -32,10 +33,6 @@ p {
 a {
   text-decoration: none;
   color: black;
-}
-
-a:link {
-  color: white;
 }
 
 /* HEADER */
@@ -79,8 +76,8 @@ header {
 
 #presentation button {
   height: 40px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#584274));
-  background: linear-gradient(#ff79da, #584274);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
   color: white;
   border-radius: 50px;
   border: 0 solid white;
@@ -235,6 +232,10 @@ footer h2 {
   font-family: "Shrikhand", cursive;
   color: white;
   margin: 10px 0 10px 0;
+}
+
+footer a:link {
+  color: white;
 }
 
 .pied {

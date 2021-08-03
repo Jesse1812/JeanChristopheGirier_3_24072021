@@ -1,3 +1,8 @@
+/* variables Sass */
+$color-violet: #9356dc;
+$color-rose: #ff79da;
+$color-bleu: #99e2d0;
+
 /* GENERAL */
 * {
   width: 100%;
@@ -27,10 +32,6 @@ p {
 a {
   text-decoration: none;
   color: black;
-
-  &:link {
-    color: white;
-  }
 }
 
 /* HEADER */
@@ -69,7 +70,7 @@ header {
 
   button {
     height: 40px;
-    background: linear-gradient(#ff79da, #584274);
+    background: linear-gradient($color-rose, $color-violet);
     color: white;
     border-radius: 50px;
     border: 0 solid white;
@@ -110,7 +111,7 @@ header {
   color: grey;
 }
 .font3 i {
-  color: #9356dc;
+  color: $color-violet;
 }
 .font,
 .font3 {
@@ -201,7 +202,11 @@ footer {
     color: white;
     margin: 10px 0 10px 0;
   }
+  a:link {
+    color: white;
+  }
 }
+
 .pied {
   display: flex;
 }
