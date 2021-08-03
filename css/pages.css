@@ -121,7 +121,7 @@ button {
   background: linear-gradient(#ff79da, #584274);
   color: white;
   border-radius: 50px;
-  border: 1px solid white;
+  border: 0 solid white;
   font-weight: bold;
   -webkit-box-shadow: 1px 5px 5px grey;
           box-shadow: 1px 5px 5px grey;
