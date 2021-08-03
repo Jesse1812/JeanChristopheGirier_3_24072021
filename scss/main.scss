@@ -24,6 +24,14 @@ h3 {
 p {
   margin-bottom: 5px;
 }
+a {
+  text-decoration: none;
+  color: black;
+
+  &:link {
+    color: white;
+  }
+}
 
 /* HEADER */
 header {

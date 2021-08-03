@@ -33,6 +33,15 @@ h5 {
   font-weight: 100;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:link {
+  color: white;
+}
+
 #menu {
   background-color: whitesmoke;
   border-top: 1px solid grey;
@@ -131,9 +140,10 @@ button {
 /*FOOTER*/
 footer {
   background-color: #202020;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 10px 10px 30px 20px;
-  width: 100%;
+  width: 75%;
+  margin: auto;
 }
 
 footer p {
@@ -146,8 +156,9 @@ footer i {
   width: 5%;
 }
 
-#logo_blanc {
-  width: 25%;
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  color: white;
   margin: 10px 0 10px 0;
 }
 

@@ -29,6 +29,15 @@ p {
   margin-bottom: 5px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:link {
+  color: white;
+}
+
 /* HEADER */
 header {
   width: 50%;
