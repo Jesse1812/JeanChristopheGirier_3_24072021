@@ -101,9 +101,9 @@ header {
   border: 0 solid white;
   font-weight: bold;
   font-size: 0.8em;
-  box-shadow: 1px 5px 5px grey;
-  margin-bottom: 10px;
-  margin-top: 5px;
+  box-shadow: 1px 5px 5px lightgray;
+  margin-bottom: 20px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
 }
@@ -189,12 +189,12 @@ footer {
 
   p {
     color: white;
-    width: 95%;
+    width: 97%;
   }
 
   i {
     color: white;
-    width: 5%;
+    width: 3%;
   }
   h2 {
     font-size: large;
