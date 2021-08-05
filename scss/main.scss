@@ -2,6 +2,8 @@
 $color-violet: #9356dc;
 $color-rose: #ff79da;
 $color-bleu: #99e2d0;
+$color-rose-clair: #ff99da;
+$color-violet-clair: #9370dc;
 
 /* GENERAL */
 * {
@@ -76,14 +78,20 @@ header {
     border: 0 solid white;
     font-weight: bold;
     width: 30%;
-    box-shadow: 1px 5px 5px grey;
+    box-shadow: 1px 5px 5px lightgrey;
     margin-top: 10px;
+
+    &:hover {
+      box-shadow: 1px 5px 5px grey;
+      background: linear-gradient($color-rose-clair, $color-violet-clair);
+    }
   }
 }
 
 /*FONCTIONNEMENT*/
 .numero {
   position: absolute;
+  z-index: 1;
   margin-top: 5px;
   margin-left: -15px;
 
@@ -95,18 +103,26 @@ header {
   }
 }
 .bouton button {
+  position: relative;
   height: 50px;
-  background-color: lightgrey;
+  width: 100%;
+  background-color: whitesmoke;
   border-radius: 20px;
   border: 0 solid white;
   font-weight: bold;
   font-size: 0.8em;
-  box-shadow: 1px 5px 5px lightgray;
+  box-shadow: 1px 5px 5px lightgrey;
   margin-bottom: 20px;
   margin-top: 10px;
   display: flex;
   align-items: center;
+
+  &:hover {
+    box-shadow: 1px 5px 5px grey;
+    background-color: white;
+  }
 }
+
 .font i {
   color: grey;
 }
@@ -206,12 +222,11 @@ footer {
     color: white;
   }
 }
-
 .pied {
   display: flex;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 415px) {
   /* HEADER */
   header {
     height: 30px;

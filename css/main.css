@@ -83,14 +83,22 @@ header {
   border: 0 solid white;
   font-weight: bold;
   width: 30%;
+  -webkit-box-shadow: 1px 5px 5px lightgrey;
+          box-shadow: 1px 5px 5px lightgrey;
+  margin-top: 10px;
+}
+
+#presentation button:hover {
   -webkit-box-shadow: 1px 5px 5px grey;
           box-shadow: 1px 5px 5px grey;
-  margin-top: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff99da), to(#9370dc));
+  background: linear-gradient(#ff99da, #9370dc);
 }
 
 /*FONCTIONNEMENT*/
 .numero {
   position: absolute;
+  z-index: 1;
   margin-top: 5px;
   margin-left: -15px;
 }
@@ -103,14 +111,16 @@ header {
 }
 
 .bouton button {
+  position: relative;
   height: 50px;
-  background-color: lightgrey;
+  width: 100%;
+  background-color: whitesmoke;
   border-radius: 20px;
   border: 0 solid white;
   font-weight: bold;
   font-size: 0.8em;
-  -webkit-box-shadow: 1px 5px 5px lightgray;
-          box-shadow: 1px 5px 5px lightgray;
+  -webkit-box-shadow: 1px 5px 5px lightgrey;
+          box-shadow: 1px 5px 5px lightgrey;
   margin-bottom: 20px;
   margin-top: 10px;
   display: -webkit-box;
@@ -119,6 +129,12 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.bouton button:hover {
+  -webkit-box-shadow: 1px 5px 5px grey;
+          box-shadow: 1px 5px 5px grey;
+  background-color: white;
 }
 
 .font i {
@@ -244,7 +260,7 @@ footer a:link {
   display: flex;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 415px) {
   /* HEADER */
   header {
     height: 30px;
