@@ -2,8 +2,6 @@
 $color-violet: #9356dc;
 $color-rose: #ff79da;
 $color-bleu: #99e2d0;
-$color-rose-clair: #ff99da;
-$color-violet-clair: #9370dc;
 
 /* GENERAL */
 * {
@@ -80,10 +78,11 @@ header {
     width: 30%;
     box-shadow: 1px 5px 5px lightgrey;
     margin-top: 10px;
+    opacity: 1;
 
     &:hover {
       box-shadow: 1px 5px 5px grey;
-      background: linear-gradient($color-rose-clair, $color-violet-clair);
+      opacity: 0.7;
     }
   }
 }
@@ -111,16 +110,18 @@ header {
   border: 0 solid white;
   font-weight: bold;
   font-size: 0.8em;
-  box-shadow: 1px 5px 5px lightgrey;
+  box-shadow: 1px 5px 3px lightgrey;
   margin-bottom: 20px;
   margin-top: 10px;
   display: flex;
   align-items: center;
-
-  &:hover {
-    box-shadow: 1px 5px 5px grey;
-    background-color: white;
-  }
+  opacity: 1;
+}
+.bouton:hover {
+  display: block;
+  box-shadow: 1px 5px 5px grey;
+  opacity: 0.5;
+  border-radius: 20px;
 }
 
 .font i {

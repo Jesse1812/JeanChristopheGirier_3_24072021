@@ -86,13 +86,13 @@ header {
   -webkit-box-shadow: 1px 5px 5px lightgrey;
           box-shadow: 1px 5px 5px lightgrey;
   margin-top: 10px;
+  opacity: 1;
 }
 
 #presentation button:hover {
   -webkit-box-shadow: 1px 5px 5px grey;
           box-shadow: 1px 5px 5px grey;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff99da), to(#9370dc));
-  background: linear-gradient(#ff99da, #9370dc);
+  opacity: 0.7;
 }
 
 /*FONCTIONNEMENT*/
@@ -119,8 +119,8 @@ header {
   border: 0 solid white;
   font-weight: bold;
   font-size: 0.8em;
-  -webkit-box-shadow: 1px 5px 5px lightgrey;
-          box-shadow: 1px 5px 5px lightgrey;
+  -webkit-box-shadow: 1px 5px 3px lightgrey;
+          box-shadow: 1px 5px 3px lightgrey;
   margin-bottom: 20px;
   margin-top: 10px;
   display: -webkit-box;
@@ -129,12 +129,15 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 1;
 }
 
-.bouton button:hover {
+.bouton:hover {
+  display: block;
   -webkit-box-shadow: 1px 5px 5px grey;
           box-shadow: 1px 5px 5px grey;
-  background-color: white;
+  opacity: 0.5;
+  border-radius: 20px;
 }
 
 .font i {
