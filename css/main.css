@@ -169,6 +169,12 @@ header {
 }
 
 /* LISTE DES RESTAURANTS */
+#entrees {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .carte {
   display: block;
   -webkit-box-shadow: 1px 3px 3px lightgrey;

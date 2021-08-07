@@ -151,6 +151,9 @@ header {
 }
 
 /* LISTE DES RESTAURANTS */
+#entrees {
+  display: flex;
+}
 .carte {
   display: block;
   box-shadow: 1px 3px 3px lightgrey;
