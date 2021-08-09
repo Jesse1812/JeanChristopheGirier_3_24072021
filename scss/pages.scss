@@ -133,7 +133,7 @@ header {
 }
 
 .carte {
-  border: 0px solid lightgray;
+  border: 0px solid lightgrey;
   box-shadow: 1px 3px 3px lightgrey;
   border-radius: 20px;
   height: 20%;
@@ -251,6 +251,7 @@ footer {
   }
   #menu .ecran-large {
     display: block;
+    height: auto;
   }
 
   .carte {

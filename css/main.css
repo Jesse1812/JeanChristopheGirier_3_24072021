@@ -64,7 +64,7 @@ header {
 
 #localisation h5 {
   text-align: left;
-  width: 60%;
+  width: 40%;
 }
 
 /* PRESENTATION */
@@ -176,6 +176,7 @@ header {
 }
 
 .carte {
+  display: block;
   -webkit-box-shadow: 1px 3px 3px lightgrey;
           box-shadow: 1px 3px 3px lightgrey;
   border-radius: 20px;
