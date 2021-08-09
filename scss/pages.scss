@@ -90,6 +90,7 @@ header {
 
   .ecran-large {
     display: flex;
+    height: 300px;
   }
 
   .pleine-largeur1 {
@@ -287,5 +288,15 @@ footer {
     i {
       padding-right: 10px;
     }
+  }
+}
+
+/* display cartes */
+@media only screen and (min-width: 415px) and (max-width: 885px) {
+  .ecran-large {
+    height: auto;
+  }
+  .carte {
+    height: auto;
   }
 }
