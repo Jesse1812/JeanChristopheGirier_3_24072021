@@ -131,7 +131,30 @@ header {
     width: 80%;
   }
 }
-
+@keyframes coeur-plein {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+.far {
+  position: absolute;
+}
+.pleine-largeur1 .fas {
+  position: absolute;
+  background-color: $color-violet;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+  color: transparent;
+  visibility: hidden;
+}
+.pleine-largeur1 .fas:hover {
+  visibility: visible;
+  animation: coeur-plein;
+}
 .carte {
   border: 0px solid lightgrey;
   box-shadow: 1px 3px 3px lightgrey;
@@ -153,19 +176,35 @@ header {
   }
 
   .pleine-largeur {
+    display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
+    .fas {
+      background-color: $color-bleu;
+      width: 10%;
+      height: 65px;
+      display: flex;
+    }
+    .pleine-largeur:hover .fas {
+      visibility: visible;
+    }
   }
 }
 .titre {
+  overflow: visible;
   width: 80%;
+  &:hover {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 .prix {
-  display: flex;
   justify-content: flex-end;
-  padding-bottom: 10px;
-  padding-right: 25px;
+  margin: auto;
   width: 20%;
 }
+
 .bouton {
   margin-top: 70px;
   padding-bottom: 40px;
@@ -186,6 +225,44 @@ button {
   &:hover {
     box-shadow: 1px 5px 5px grey;
     opacity: 0.7;
+  }
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+}
+.validation .fas:hover {
+  -webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.progress-entrees {
+  animation: progress 2000ms 100ms;
+}
+
+@keyframes progress {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
   }
 }
 
