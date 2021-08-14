@@ -61,6 +61,25 @@ header {
     width: 40%;
   }
 }
+header,
+#presentation,
+#fonctionnement,
+#restaurants,
+footer {
+  animation: loading 5s 0.1s;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0.1;
+  }
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /* PRESENTATION */
 #presentation {
