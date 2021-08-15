@@ -96,7 +96,8 @@ header {
   .pleine-largeur1 {
     display: flex;
     align-items: center;
-    width: 90%;
+    justify-content: flex-end;
+    width: 50%;
     margin: auto;
 
     i {
@@ -131,29 +132,24 @@ header {
     width: 80%;
   }
 }
-@keyframes coeur-plein {
-  0% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: visible;
-  }
-}
 .far {
   position: absolute;
 }
 .pleine-largeur1 .fas {
+  position: absolute;
+  background-color: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+  color: transparent;
+}
+.pleine-largeur1 .fas:hover {
   position: absolute;
   background-color: $color-violet;
   background-clip: text;
   -webkit-background-clip: text;
   background-size: cover;
   color: transparent;
-  visibility: hidden;
-}
-.pleine-largeur1 .fas:hover {
-  visibility: visible;
-  animation: coeur-plein;
 }
 .carte {
   border: 0px solid lightgrey;
@@ -324,7 +320,11 @@ footer {
   }
   #menu .pleine-largeur1 {
     width: 100%;
-    margin: 0;
+
+    i {
+      text-align: center;
+      margin: 0;
+    }
   }
   #menu .ecran-large {
     display: block;
