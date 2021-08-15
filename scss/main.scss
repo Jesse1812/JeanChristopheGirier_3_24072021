@@ -204,9 +204,28 @@ footer {
     display: flex;
     width: 30%;
 
-    i {
+    .far {
       text-align: right;
-      margin-right: 20px;
+      position: relative;
+      margin-right: 30px;
+    }
+
+    .fas {
+      position: absolute;
+      margin-left: 29px;
+      background-color: white;
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-size: cover;
+      color: transparent;
+
+      &:hover {
+        background-color: $color-violet;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-size: cover;
+        color: transparent;
+      }
     }
   }
   .coeur-nouveau {
@@ -215,12 +234,32 @@ footer {
     width: 30%;
     margin-top: 155px;
 
-    i {
+    .far {
       text-align: right;
-      margin-right: 20px;
+      position: relative;
+      margin-right: 30px;
+    }
+
+    .fas {
+      position: absolute;
+      margin-left: 29px;
+      background-color: white;
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-size: cover;
+      color: transparent;
+    }
+
+    &:hover {
+      background-color: $color-violet;
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-size: cover;
+      color: transparent;
     }
   }
 }
+
 .pleine-largeur {
   display: flex;
   justify-content: right;

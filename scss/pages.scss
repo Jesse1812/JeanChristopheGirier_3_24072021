@@ -93,7 +93,7 @@ header {
     height: 300px;
   }
 
-  .pleine-largeur1 {
+  .menu__coeurs {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -135,7 +135,7 @@ header {
 .far {
   position: absolute;
 }
-.pleine-largeur1 .fas {
+.menu__coeurs .fas {
   position: absolute;
   background-color: white;
   background-clip: text;
@@ -143,7 +143,7 @@ header {
   background-size: cover;
   color: transparent;
 }
-.pleine-largeur1 .fas:hover {
+.menu__coeurs .fas:hover {
   position: absolute;
   background-color: $color-violet;
   background-clip: text;
@@ -318,7 +318,7 @@ footer {
     width: 10%;
     margin-left: 10px;
   }
-  #menu .pleine-largeur1 {
+  #menu .menu__coeurs {
     width: 100%;
 
     i {

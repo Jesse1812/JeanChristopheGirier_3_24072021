@@ -247,9 +247,28 @@ footer {
   width: 30%;
 }
 
-.carte .coeur i {
+.carte .coeur .far {
   text-align: right;
-  margin-right: 20px;
+  position: relative;
+  margin-right: 30px;
+}
+
+.carte .coeur .fas {
+  position: absolute;
+  margin-left: 29px;
+  background-color: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+  color: transparent;
+}
+
+.carte .coeur .fas:hover {
+  background-color: #9356dc;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+  color: transparent;
 }
 
 .carte .coeur-nouveau {
@@ -261,9 +280,28 @@ footer {
   margin-top: 155px;
 }
 
-.carte .coeur-nouveau i {
+.carte .coeur-nouveau .far {
   text-align: right;
-  margin-right: 20px;
+  position: relative;
+  margin-right: 30px;
+}
+
+.carte .coeur-nouveau .fas {
+  position: absolute;
+  margin-left: 29px;
+  background-color: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+  color: transparent;
+}
+
+.carte .coeur-nouveau:hover {
+  background-color: #9356dc;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+  color: transparent;
 }
 
 .pleine-largeur {
