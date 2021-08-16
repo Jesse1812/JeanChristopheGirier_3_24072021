@@ -212,7 +212,7 @@ footer {
 
     .fas {
       position: absolute;
-      margin-left: 29px;
+      padding-left: 29px;
       background-color: white;
       background-clip: text;
       -webkit-background-clip: text;
@@ -252,6 +252,7 @@ footer {
 
     &:hover {
       background-color: $color-violet;
+      margin-left: 30px;
       background-clip: text;
       -webkit-background-clip: text;
       background-size: cover;
@@ -317,8 +318,8 @@ footer {
   zoom: 2;
   border-radius: 50%;
   position: relative;
-  -webkit-animation: spinner 5s 0.1s linear;
-  animation: spinner 5s 0.1s linear;
+  -webkit-animation: spinner 3s 0.1s linear;
+  animation: spinner 3s 0.1s linear;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -470,8 +471,8 @@ footer {
 
   /* LISTE DES RESTAURANTS */
   .carte {
-    width: 100%;
     margin-bottom: 20px;
+    margin: auto;
 
     h3 {
       margin-left: 10px;
@@ -485,7 +486,6 @@ footer {
     }
 
     .coeur {
-      margin-left: 10px;
       margin-bottom: 10px;
       display: flex;
     }

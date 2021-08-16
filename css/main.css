@@ -255,7 +255,7 @@ footer {
 
 .carte .coeur .fas {
   position: absolute;
-  margin-left: 29px;
+  padding-left: 29px;
   background-color: white;
   background-clip: text;
   -webkit-background-clip: text;
@@ -298,6 +298,7 @@ footer {
 
 .carte .coeur-nouveau:hover {
   background-color: #9356dc;
+  margin-left: 30px;
   background-clip: text;
   -webkit-background-clip: text;
   background-size: cover;
@@ -375,8 +376,8 @@ footer {
   zoom: 2;
   border-radius: 50%;
   position: relative;
-  -webkit-animation: spinner 5s 0.1s linear;
-  animation: spinner 5s 0.1s linear;
+  -webkit-animation: spinner 3s 0.1s linear;
+  animation: spinner 3s 0.1s linear;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
@@ -524,8 +525,8 @@ footer a:link {
   }
   /* LISTE DES RESTAURANTS */
   .carte {
-    width: 100%;
     margin-bottom: 20px;
+    margin: auto;
   }
   .carte h3 {
     margin-left: 10px;
@@ -537,7 +538,6 @@ footer a:link {
     margin-bottom: 10px;
   }
   .carte .coeur {
-    margin-left: 10px;
     margin-bottom: 10px;
     display: -webkit-box;
     display: -ms-flexbox;

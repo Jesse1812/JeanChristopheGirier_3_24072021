@@ -224,6 +224,7 @@ button {
   }
 }
 
+/* Slide left effet sur cartes */
 @-webkit-keyframes slide-left {
   0% {
     -webkit-transform: translateX(0);
@@ -249,16 +250,29 @@ button {
   animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.progress-entrees {
-  animation: progress 2000ms 100ms;
+/* 3 transitions menus */
+#entrees {
+  animation: progress 2s;
+}
+#plats {
+  animation: progress 4s;
+}
+#desserts {
+  animation: progress 6s;
 }
 
 @keyframes progress {
-  from {
-    visibility: hidden;
+  0% {
+    opacity: 0.1;
   }
-  to {
-    visibility: visible;
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
