@@ -156,6 +156,7 @@ header {
   box-shadow: 1px 3px 3px lightgrey;
   border-radius: 20px;
   height: 20%;
+  max-height: 100px;
   width: 95%;
   padding-top: 10px;
   margin: auto;
@@ -189,10 +190,11 @@ header {
 .titre {
   overflow: visible;
   width: 80%;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
   &:hover {
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 }
 .prix {
@@ -244,6 +246,10 @@ button {
     -webkit-transform: translateX(-100px);
     transform: translateX(-100px);
   }
+}
+
+.validation i {
+  display: flex;
 }
 .validation .fas:hover {
   -webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;

@@ -185,6 +185,7 @@ header img {
           box-shadow: 1px 3px 3px lightgrey;
   border-radius: 20px;
   height: 20%;
+  max-height: 100px;
   width: 95%;
   padding-top: 10px;
   margin: auto;
@@ -228,12 +229,12 @@ header img {
 .titre {
   overflow: visible;
   width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .titre:hover {
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .prix {
@@ -292,6 +293,12 @@ button:hover {
     -webkit-transform: translateX(-100px);
     transform: translateX(-100px);
   }
+}
+
+.validation i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .validation .fas:hover {

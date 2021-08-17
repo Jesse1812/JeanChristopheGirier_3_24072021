@@ -67,7 +67,7 @@ header,
 #fonctionnement,
 #restaurants,
 footer {
-  animation: loading 5s 0.1s;
+  animation: loading 3s 0.1s;
 }
 
 @keyframes loading {
@@ -213,7 +213,6 @@ footer {
     .fas {
       position: absolute;
       padding-left: 29px;
-      background-color: white;
       background-clip: text;
       -webkit-background-clip: text;
       background-size: cover;
@@ -243,27 +242,26 @@ footer {
     .fas {
       position: absolute;
       margin-left: 29px;
-      background-color: white;
       background-clip: text;
       -webkit-background-clip: text;
       background-size: cover;
       color: transparent;
-    }
 
-    &:hover {
-      background-color: $color-violet;
-      margin-left: 30px;
-      background-clip: text;
-      -webkit-background-clip: text;
-      background-size: cover;
-      color: transparent;
+      &:hover {
+        background-color: $color-violet;
+        margin-left: 29px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-size: cover;
+        color: transparent;
+      }
     }
   }
 }
 
 .pleine-largeur {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 2;

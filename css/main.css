@@ -73,8 +73,8 @@ header,
 #fonctionnement,
 #restaurants,
 footer {
-  -webkit-animation: loading 5s 0.1s;
-          animation: loading 5s 0.1s;
+  -webkit-animation: loading 3s 0.1s;
+          animation: loading 3s 0.1s;
 }
 
 @-webkit-keyframes loading {
@@ -256,7 +256,6 @@ footer {
 .carte .coeur .fas {
   position: absolute;
   padding-left: 29px;
-  background-color: white;
   background-clip: text;
   -webkit-background-clip: text;
   background-size: cover;
@@ -289,16 +288,15 @@ footer {
 .carte .coeur-nouveau .fas {
   position: absolute;
   margin-left: 29px;
-  background-color: white;
   background-clip: text;
   -webkit-background-clip: text;
   background-size: cover;
   color: transparent;
 }
 
-.carte .coeur-nouveau:hover {
+.carte .coeur-nouveau .fas:hover {
   background-color: #9356dc;
-  margin-left: 30px;
+  margin-left: 29px;
   background-clip: text;
   -webkit-background-clip: text;
   background-size: cover;
@@ -309,9 +307,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
