@@ -124,7 +124,6 @@ header {
 }
 .menu__coeurs .fas {
   position: absolute;
-  background-color: white;
   background-clip: text;
   -webkit-background-clip: text;
   background-size: cover;
@@ -139,13 +138,13 @@ header {
   color: transparent;
 }
 .carte {
+  cursor: pointer;
   border: 0px solid lightgrey;
   box-shadow: 1px 3px 3px lightgrey;
   border-radius: 20px;
   height: 20%;
   max-height: 100px;
   width: 95%;
-  padding-top: 10px;
   margin: auto;
   background-color: white;
   margin-bottom: 10px;
@@ -167,22 +166,10 @@ header {
   }
   .prix {
     width: 20%;
+    text-align: right;
+    margin-right: 10px;
   }
 }
-
-.validation {
-  display: flex;
-  align-items: flex-end;
-
-  .fas {
-    background-color: $color-bleu;
-    border-radius: 10px;
-    width: 40px;
-    height: 65px;
-    display: flex;
-  }
-}
-
 .titre {
   overflow: visible;
   text-overflow: ellipsis;
@@ -190,6 +177,30 @@ header {
   &:hover {
     overflow: hidden;
   }
+}
+.validation {
+  display: flex;
+  width: 60px;
+
+  .fas {
+    background-color: $color-bleu;
+    border-radius: 10px;
+    max-height: fit-content;
+    align-items: center;
+    display: flex;
+    opacity: 0;
+    padding: 20%;
+  }
+}
+.carte:hover .validation .fas {
+  opacity: 1;
+  -webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.carte:hover .prix {
+  -webkit-animation: slide-left-prix 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-left-prix 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .bouton {
@@ -215,15 +226,38 @@ button {
   }
 }
 
-/* Slide left effet sur cartes */
+/* slide-left effet prix */
+@-webkit-keyframes slide-left-prix {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-60px);
+    transform: translateX(-60px);
+  }
+}
+
+@keyframes slide-left-prix {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-60px);
+    transform: translateX(-60px);
+  }
+}
+
+/* Slide left effet coche */
 @-webkit-keyframes slide-left {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-50px);
-    transform: translateX(-50px);
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
   }
 }
 @keyframes slide-left {
@@ -232,17 +266,9 @@ button {
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-50px);
-    transform: translateX(-50px);
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
   }
-}
-
-.validation i {
-  display: flex;
-}
-.validation .fas:hover {
-  -webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* 3 transitions menus */
