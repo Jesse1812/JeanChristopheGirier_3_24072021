@@ -138,25 +138,6 @@ header img {
   margin-top: 30px;
 }
 
-.pleine-largeur {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.pleine-largeur i {
-  text-align: right;
-  margin-right: 20px;
-  width: 20%;
-}
-
-.pleine-largeur h1 {
-  width: 80%;
-}
-
 .far {
   position: absolute;
 }
@@ -202,47 +183,50 @@ header img {
   margin-top: 5px;
 }
 
-.carte .pleine-largeur {
+.pleine-largeur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pleine-largeur .titre {
+  width: 80%;
+}
+
+.pleine-largeur .prix {
+  width: 20%;
+}
+
+.validation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-.carte .pleine-largeur .fas {
+.validation .fas {
   background-color: #99e2d0;
-  width: 10%;
+  border-radius: 10px;
+  width: 40px;
   height: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.carte .pleine-largeur .pleine-largeur:hover .fas {
-  visibility: visible;
-}
-
 .titre {
   overflow: visible;
-  width: 80%;
-  overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.titre:hover {
   white-space: nowrap;
 }
 
-.prix {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin: auto;
-  width: 20%;
+.titre:hover {
+  overflow: hidden;
 }
 
 .bouton {
@@ -279,8 +263,8 @@ button:hover {
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
   }
 }
 
@@ -290,8 +274,8 @@ button:hover {
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
+    -webkit-transform: translateX(-50px);
+    transform: translateX(-50px);
   }
 }
 
