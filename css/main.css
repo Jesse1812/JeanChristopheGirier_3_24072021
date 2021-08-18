@@ -174,16 +174,8 @@ footer {
   border-radius: 20px;
 }
 
-.font i {
+button .fas {
   color: grey;
-}
-
-.font3 i {
-  color: #9356dc;
-}
-
-.font,
-.font3 {
   width: 40%;
 }
 
