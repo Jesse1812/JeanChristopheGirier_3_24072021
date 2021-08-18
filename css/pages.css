@@ -222,6 +222,7 @@ h5:hover {
 
 .validation .fas {
   background-color: #99e2d0;
+  color: white;
   border-radius: 10px;
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
