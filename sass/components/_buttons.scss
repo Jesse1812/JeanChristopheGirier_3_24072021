@@ -1,0 +1,50 @@
+#presentation {
+  margin: auto;
+  text-align: center;
+  height: 150px;
+
+  button {
+    height: 40px;
+    background: linear-gradient($color-rose, $color-violet);
+    color: white;
+    border-radius: 50px;
+    border: 0 solid white;
+    font-weight: bold;
+    width: 30%;
+    box-shadow: 1px 5px 5px lightgrey;
+    margin-top: 30px;
+    opacity: 1;
+
+    &:hover {
+      box-shadow: 1px 5px 5px grey;
+      opacity: 0.7;
+    }
+  }
+}
+
+.bouton button {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  border: 0 solid white;
+  font-weight: bold;
+  font-size: 0.8em;
+  box-shadow: 1px 5px 3px lightgrey;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+}
+.bouton:hover {
+  display: block;
+  box-shadow: 1px 5px 5px grey;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+button .fas {
+  color: grey;
+  width: 40%;
+}

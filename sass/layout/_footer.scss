@@ -1,0 +1,29 @@
+footer {
+  background-color: rgb(32, 32, 32);
+  margin-top: 30px;
+  padding: 10px 10px 30px 20px;
+  width: 100%;
+  margin: auto;
+
+  p {
+    color: white;
+    width: 97%;
+  }
+
+  i {
+    color: white;
+    width: 3%;
+  }
+  h2 {
+    font-size: large;
+    font-family: "Shrikhand", cursive;
+    color: white;
+    margin: 10px 0 20px 0;
+  }
+  a:link {
+    color: white;
+  }
+}
+.pied {
+  display: flex;
+}

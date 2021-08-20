@@ -1,47 +1,10 @@
-/* variables Sass */
-$color-violet: #9356dc;
-$color-rose: #ff79da;
-$color-bleu: #99e2d0;
+@import "../sass/utils/variables";
+@import "../sass/utils/animations";
+@import "../sass/base/typography";
+@import "../sass/layout/header";
+@import "../sass/layout/footer";
+@import "../sass/components/buttons";
 
-/* GENERAL */
-* {
-  width: 100%;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-h1 {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-h2 {
-  font-size: 1em;
-  font-weight: 200;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-h3 {
-  font-size: 1em;
-  font-weight: bold;
-  margin: 10px 0 10px 5px;
-}
-p {
-  margin-bottom: 5px;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-
-/* HEADER */
-header {
-  width: 50%;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  height: auto;
-}
 #localisation {
   display: flex;
   font-weight: bold;
@@ -70,43 +33,6 @@ footer {
   animation: loading 3s 0.1s;
 }
 
-@keyframes loading {
-  0% {
-    opacity: 0.1;
-  }
-  75% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/* PRESENTATION */
-#presentation {
-  margin: auto;
-  text-align: center;
-  height: 150px;
-
-  button {
-    height: 40px;
-    background: linear-gradient($color-rose, $color-violet);
-    color: white;
-    border-radius: 50px;
-    border: 0 solid white;
-    font-weight: bold;
-    width: 30%;
-    box-shadow: 1px 5px 5px lightgrey;
-    margin-top: 30px;
-    opacity: 1;
-
-    &:hover {
-      box-shadow: 1px 5px 5px grey;
-      opacity: 0.7;
-    }
-  }
-}
-
 /*FONCTIONNEMENT*/
 .numero {
   position: absolute;
@@ -121,34 +47,6 @@ footer {
     -webkit-filter: hue-rotate(60deg);
   }
 }
-.bouton button {
-  position: relative;
-  height: 50px;
-  width: 100%;
-  background-color: whitesmoke;
-  border-radius: 20px;
-  border: 0 solid white;
-  font-weight: bold;
-  font-size: 0.8em;
-  box-shadow: 1px 5px 3px lightgrey;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  opacity: 1;
-}
-.bouton:hover {
-  display: block;
-  box-shadow: 1px 5px 5px grey;
-  opacity: 0.8;
-  border-radius: 20px;
-}
-
-button .fas {
-  color: grey;
-  width: 40%;
-}
-
 #fonctionnement {
   margin: 30px 0 50px 0;
 
@@ -316,107 +214,6 @@ button .fas {
   -ms-transform: translateZ(0);
   transform: translateZ(0);
 }
-@-webkit-keyframes spinner {
-  0%,
-  100% {
-    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em,
-      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
-  }
-  12.5% {
-    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em,
-      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
-  }
-  25% {
-    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0,
-      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
-  }
-  37.5% {
-    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em,
-      0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
-  }
-  50% {
-    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em,
-      0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
-  }
-  62.5% {
-    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
-      0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
-  }
-  75% {
-    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em,
-      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
-  }
-  87.5% {
-    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
-      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
-  }
-}
-@keyframes spinner {
-  0%,
-  100% {
-    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em,
-      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
-  }
-  12.5% {
-    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em,
-      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
-  }
-  25% {
-    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0,
-      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
-  }
-  37.5% {
-    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em,
-      0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
-  }
-  50% {
-    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em,
-      0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
-  }
-  62.5% {
-    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
-      0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
-  }
-  75% {
-    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em,
-      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
-  }
-  87.5% {
-    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
-      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
-  }
-}
-
-/*FOOTER*/
-footer {
-  background-color: rgb(32, 32, 32);
-  margin-top: 30px;
-  padding: 10px 10px 30px 20px;
-  width: 100%;
-  margin: auto;
-
-  p {
-    color: white;
-    width: 97%;
-  }
-
-  i {
-    color: white;
-    width: 3%;
-  }
-  h2 {
-    font-size: large;
-    font-family: "Shrikhand", cursive;
-    color: white;
-    margin: 10px 0 20px 0;
-  }
-  a:link {
-    color: white;
-  }
-}
-.pied {
-  display: flex;
-}
 
 @media only screen and (max-width: 415px) {
   /* HEADER */
@@ -436,7 +233,6 @@ footer {
   }
 
   /*FONCTIONNEMENT*/
-
   .numero {
     margin-top: 12px;
     margin-left: -10px;
@@ -464,8 +260,6 @@ footer {
   /* LISTE DES RESTAURANTS */
   .carte {
     margin-bottom: 20px;
-    margin: auto;
-
     h3 {
       margin-left: 10px;
       margin-bottom: 0;
@@ -485,7 +279,6 @@ footer {
   #restaurants h3 {
     text-align: left;
   }
-
   #restaurants img {
     height: 150px;
   }
