@@ -312,6 +312,7 @@ button .fas {
   width: 40%;
 }
 
+/* Toutes les sections */
 #localisation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -343,6 +344,10 @@ header,
 footer {
   -webkit-animation: loading 3s 0.1s;
           animation: loading 3s 0.1s;
+}
+
+#presentation {
+  height: auto;
 }
 
 /*FONCTIONNEMENT*/
@@ -574,10 +579,6 @@ footer {
   .numero img {
     width: 8%;
     height: 8%;
-  }
-  .font,
-  .font3 {
-    width: 20%;
   }
   #fonctionnement h3 {
     text-align: left;

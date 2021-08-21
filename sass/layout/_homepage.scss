@@ -1,0 +1,214 @@
+/* Toutes les sections */
+#localisation {
+  display: flex;
+  font-weight: bold;
+  background-color: lightgray;
+  height: 30px;
+  padding-top: 10px;
+  width: 50%;
+  margin: auto;
+
+  i {
+    text-align: right;
+    padding-right: 10px;
+    width: 40%;
+  }
+  h5 {
+    text-align: left;
+    width: 40%;
+  }
+}
+header,
+#localisation,
+#presentation,
+#fonctionnement,
+#restaurants,
+footer {
+  animation: loading 3s 0.1s;
+}
+
+#presentation {
+  height: auto;
+}
+
+/*FONCTIONNEMENT*/
+.numero {
+  position: absolute;
+  z-index: 1;
+  margin-top: 10px;
+  margin-left: -15px;
+
+  img {
+    width: 3%;
+    height: 3%;
+    filter: hue-rotate(60deg);
+    -webkit-filter: hue-rotate(60deg);
+  }
+}
+#fonctionnement {
+  margin: 30px 0 50px 0;
+
+  h3 {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+
+  .bouton {
+    width: 30%;
+    margin: auto;
+  }
+}
+
+/* LISTE DES RESTAURANTS */
+#entrees {
+  display: flex;
+}
+.carte {
+  display: block;
+  box-shadow: 1px 3px 3px lightgrey;
+  border-radius: 20px;
+  width: 250px;
+  height: 200px;
+  margin: auto;
+  margin-bottom: 20px;
+
+  h4 {
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .description {
+    width: 70%;
+  }
+  .description-nouveau {
+    width: 70%;
+    margin-top: 155px;
+  }
+  .coeur {
+    margin-bottom: 10px;
+    display: flex;
+    width: 30%;
+
+    .far {
+      text-align: right;
+      position: relative;
+      margin-right: 30px;
+    }
+
+    .fas {
+      position: absolute;
+      padding-left: 29px;
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-size: cover;
+      color: transparent;
+
+      &:hover {
+        background-color: $color-violet;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-size: cover;
+        color: transparent;
+      }
+    }
+  }
+  .coeur-nouveau {
+    margin-bottom: 10px;
+    display: flex;
+    width: 30%;
+    margin-top: 155px;
+
+    .far {
+      text-align: right;
+      position: relative;
+      margin-right: 30px;
+    }
+
+    .fas {
+      position: absolute;
+      margin-left: 29px;
+      background-clip: text;
+      -webkit-background-clip: text;
+      background-size: cover;
+      color: transparent;
+
+      &:hover {
+        background-color: $color-violet;
+        margin-left: 29px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-size: cover;
+        color: transparent;
+      }
+    }
+  }
+}
+
+.pleine-largeur {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.ecran-large {
+  display: flex;
+  flex-wrap: wrap;
+}
+#restaurants img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+#restaurants h3 {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/*Nouveau sur l'image */
+.superposition {
+  position: relative;
+}
+.image {
+  position: absolute;
+  z-index: 1;
+}
+.nouveau p {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  background-color: $color-bleu;
+  color: rgb(33, 126, 53);
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 160px;
+  border: 1px solid $color-bleu;
+  border-radius: 3px;
+  width: 70px;
+  padding: 5px 5px;
+}
+
+/* LOADING SPINNER */
+
+.loader {
+  color: $color-rose;
+  font-size: 20px;
+  margin: 20px auto;
+  width: 0.3em;
+  height: 0.3em;
+  zoom: 2;
+  border-radius: 50%;
+  position: relative;
+  -webkit-animation: spinner 3s 0.1s linear;
+  animation: spinner 3s 0.1s linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
