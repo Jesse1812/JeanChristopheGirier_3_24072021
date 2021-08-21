@@ -363,12 +363,12 @@ header img {
 
 .pleine-largeur .titre {
   width: 80%;
+  margin-left: 10px;
 }
 
 .pleine-largeur .prix {
-  width: 30%;
+  width: 20%;
   text-align: right;
-  margin-right: 20px;
 }
 
 h4,
@@ -389,13 +389,12 @@ h5:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60px;
+  width: 40px;
 }
 
 .validation .fas {
   background-color: #99e2d0;
   color: white;
-  border-radius: 10px;
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
@@ -406,7 +405,31 @@ h5:hover {
   display: -ms-flexbox;
   display: flex;
   opacity: 0;
-  padding: 20%;
+  padding: 30%;
+}
+
+.coche {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.carte:hover .coche {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  background-color: #99e2d0;
 }
 
 .carte:hover .validation .fas {
@@ -418,6 +441,14 @@ h5:hover {
 .carte:hover .prix {
   -webkit-animation: slide-left-prix 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-left-prix 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.carte:hover h4 {
+  overflow: hidden;
+}
+
+.carte:hover h5 {
+  overflow: hidden;
 }
 
 .bouton {
@@ -438,6 +469,7 @@ button {
           box-shadow: 1px 5px 5px lightgrey;
   display: block;
   margin: auto;
+  margin-bottom: 20px;
   opacity: 1;
 }
 

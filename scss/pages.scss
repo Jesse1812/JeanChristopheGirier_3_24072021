@@ -160,11 +160,11 @@ header {
   align-items: center;
   .titre {
     width: 80%;
+    margin-left: 10px;
   }
   .prix {
-    width: 30%;
+    width: 20%;
     text-align: right;
-    margin-right: 20px;
   }
 }
 h4,
@@ -180,18 +180,30 @@ h5 {
 }
 .validation {
   display: flex;
-  width: 60px;
+  width: 40px;
 
   .fas {
     background-color: $color-bleu;
     color: white;
-    border-radius: 10px;
     max-height: fit-content;
     align-items: center;
     display: flex;
     opacity: 0;
-    padding: 20%;
+    padding: 30%;
   }
+}
+.coche {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.7s;
+}
+.carte:hover .coche {
+  transform: rotate(0);
+  background-color: $color-bleu;
 }
 .carte:hover .validation .fas {
   opacity: 1;
@@ -203,7 +215,12 @@ h5 {
     both;
   animation: slide-left-prix 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-
+.carte:hover h4 {
+  overflow: hidden;
+}
+.carte:hover h5 {
+  overflow: hidden;
+}
 .bouton {
   margin-top: 70px;
   padding-bottom: 40px;
@@ -219,6 +236,7 @@ button {
   box-shadow: 1px 5px 5px lightgrey;
   display: block;
   margin: auto;
+  margin-bottom: 20px;
   opacity: 1;
 
   &:hover {

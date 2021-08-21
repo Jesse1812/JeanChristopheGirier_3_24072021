@@ -39,6 +39,7 @@
   /* LISTE DES RESTAURANTS */
   .carte {
     margin-bottom: 20px;
+
     h3 {
       margin-left: 10px;
       margin-bottom: 0;
@@ -48,11 +49,6 @@
     p {
       margin-left: 10px;
       margin-bottom: 10px;
-    }
-
-    .coeur {
-      margin-bottom: 10px;
-      display: flex;
     }
   }
   #restaurants h3 {
@@ -65,7 +61,7 @@
     display: block;
   }
   .nouveau p {
-    margin-left: 70%;
+    margin-left: 60%;
   }
 
   /* FOOTER */
