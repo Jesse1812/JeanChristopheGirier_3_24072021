@@ -206,51 +206,6 @@ a {
   color: black;
 }
 
-/* header main */
-header {
-  width: 50%;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  height: auto;
-}
-
-footer {
-  background-color: #202020;
-  margin-top: 30px;
-  padding: 10px 10px 30px 20px;
-  width: 100%;
-  margin: auto;
-}
-
-footer p {
-  color: white;
-  width: 97%;
-}
-
-footer i {
-  color: white;
-  width: 3%;
-}
-
-footer h2 {
-  font-size: large;
-  font-family: "Shrikhand", cursive;
-  color: white;
-  margin: 10px 0 20px 0;
-  font-weight: 300;
-}
-
-footer a:link {
-  color: white;
-}
-
-.pied {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 #presentation {
   margin: auto;
   text-align: center;
@@ -311,6 +266,51 @@ footer a:link {
 button .fas {
   color: grey;
   width: 40%;
+}
+
+/* header main */
+header {
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: auto;
+}
+
+footer {
+  background-color: #202020;
+  margin-top: 30px;
+  padding: 10px 10px 30px 20px;
+  width: 100%;
+  margin: auto;
+}
+
+footer p {
+  color: white;
+  width: 97%;
+}
+
+footer i {
+  color: white;
+  width: 3%;
+}
+
+footer h2 {
+  font-size: large;
+  font-family: "Shrikhand", cursive;
+  color: white;
+  margin: 10px 0 20px 0;
+  font-weight: 300;
+}
+
+footer a:link {
+  color: white;
+}
+
+.pied {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* Toutes les sections */
