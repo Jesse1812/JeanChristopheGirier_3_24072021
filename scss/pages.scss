@@ -1,5 +1,6 @@
 @import "../sass/utils/variables";
 @import "../sass/utils/animations";
+@import "../sass/layout/footer";
 
 /* GENERAL */
 * {
@@ -14,15 +15,6 @@ h1 {
   margin-top: 10px;
   margin-bottom: 5px;
   margin-left: 10px;
-}
-h2 {
-  font-size: 0.9em;
-  font-weight: 500;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  text-transform: uppercase;
-  text-align: center;
 }
 h4 {
   font-size: 1em;
@@ -108,15 +100,21 @@ header {
     }
   }
 
-  h2 {
+  .ecran-large h2 {
     border-bottom: 3px solid $color-bleu;
     padding-bottom: 5px;
     width: 100px;
-    margin: auto;
     margin-bottom: 10px;
     margin-top: 30px;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-transform: uppercase;
   }
 }
+
 .far {
   position: absolute;
 }
@@ -254,35 +252,6 @@ button {
 }
 #desserts {
   animation: progress 6s;
-}
-
-/*FOOTER*/
-footer {
-  background-color: rgb(32, 32, 32);
-  padding: 10px 10px 30px 20px;
-  position: absolute;
-
-  p {
-    color: white;
-    width: 98%;
-  }
-
-  i {
-    color: white;
-    width: 2%;
-  }
-
-  h2 {
-    font-family: "Shrikhand", cursive;
-    color: white;
-    margin: 10px 0 20px 0;
-    text-transform: none;
-    font-size: large;
-    text-align: left;
-  }
-}
-.pied {
-  display: flex;
 }
 
 @media only screen and (max-width: 415px) {

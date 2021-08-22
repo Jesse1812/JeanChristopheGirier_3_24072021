@@ -171,6 +171,42 @@
   }
 }
 
+footer {
+  background-color: #202020;
+  margin-top: 30px;
+  padding: 10px 10px 30px 20px;
+  width: 100%;
+  margin: auto;
+}
+
+footer p {
+  color: white;
+  width: 97%;
+}
+
+footer i {
+  color: white;
+  width: 3%;
+}
+
+footer h2 {
+  font-size: large;
+  font-family: "Shrikhand", cursive;
+  color: white;
+  margin: 10px 0 20px 0;
+  font-weight: 300;
+}
+
+footer a:link {
+  color: white;
+}
+
+.pied {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* GENERAL */
 * {
   width: 100%;
@@ -185,16 +221,6 @@ h1 {
   margin-top: 10px;
   margin-bottom: 5px;
   margin-left: 10px;
-}
-
-h2 {
-  font-size: 0.9em;
-  font-weight: 500;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 h4 {
@@ -300,13 +326,18 @@ header img {
   width: 80%;
 }
 
-#menu h2 {
+#menu .ecran-large h2 {
   border-bottom: 3px solid #99e2d0;
   padding-bottom: 5px;
   width: 100px;
-  margin: auto;
   margin-bottom: 10px;
   margin-top: 30px;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  text-transform: uppercase;
 }
 
 .far {
@@ -493,38 +524,6 @@ button:hover {
 #desserts {
   -webkit-animation: progress 6s;
           animation: progress 6s;
-}
-
-/*FOOTER*/
-footer {
-  background-color: #202020;
-  padding: 10px 10px 30px 20px;
-  position: absolute;
-}
-
-footer p {
-  color: white;
-  width: 98%;
-}
-
-footer i {
-  color: white;
-  width: 2%;
-}
-
-footer h2 {
-  font-family: "Shrikhand", cursive;
-  color: white;
-  margin: 10px 0 20px 0;
-  text-transform: none;
-  font-size: large;
-  text-align: left;
-}
-
-.pied {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 @media only screen and (max-width: 415px) {
