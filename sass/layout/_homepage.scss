@@ -18,15 +18,6 @@
     width: 40%;
   }
 }
-header,
-#localisation,
-#presentation,
-#fonctionnement,
-#restaurants,
-footer {
-  animation: loading 3s 0.1s;
-}
-
 #presentation {
   height: auto;
 }
@@ -193,22 +184,4 @@ footer {
   border-radius: 3px;
   width: 70px;
   padding: 5px 5px;
-}
-
-/* LOADING SPINNER */
-
-.loader {
-  color: $color-rose;
-  font-size: 20px;
-  margin: 20px auto;
-  width: 0.3em;
-  height: 0.3em;
-  zoom: 2;
-  border-radius: 50%;
-  position: relative;
-  -webkit-animation: spinner 3s 0.1s linear;
-  animation: spinner 3s 0.1s linear;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
 }
