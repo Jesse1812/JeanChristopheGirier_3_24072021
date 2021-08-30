@@ -243,17 +243,6 @@ button {
   }
 }
 
-/* 3 transitions menus */
-#entrees {
-  animation: progress 2s;
-}
-#plats {
-  animation: progress 4s;
-}
-#desserts {
-  animation: progress 6s;
-}
-
 @media only screen and (max-width: 415px) {
   /* HEADER */
   header {
