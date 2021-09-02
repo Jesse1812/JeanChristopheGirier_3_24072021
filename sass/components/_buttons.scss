@@ -13,6 +13,7 @@
     width: 30%;
     box-shadow: 1px 5px 5px lightgrey;
     margin-top: 30px;
+    margin-bottom: 30px;
     opacity: 1;
 
     &:hover {
@@ -36,12 +37,10 @@
   margin-top: 10px;
   display: flex;
   align-items: center;
-  opacity: 1;
 }
 .bouton:hover {
   display: block;
   box-shadow: 1px 5px 5px grey;
-  opacity: 0.8;
   border-radius: 20px;
 }
 button .fas {

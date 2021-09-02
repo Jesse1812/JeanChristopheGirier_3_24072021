@@ -36,7 +36,7 @@ footer {
 .loader {
   color: #ff79da;
   font-size: 20px;
-  margin: 20px auto;
+  margin: auto;
   width: 0.3em;
   height: 0.3em;
   zoom: 2;
