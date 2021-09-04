@@ -162,17 +162,20 @@
   position: absolute;
   z-index: 1;
 }
-.nouveau p {
+.nouveau {
   position: absolute;
   z-index: 2;
-  text-align: center;
   background-color: $color-bleu;
-  color: rgb(33, 126, 53);
-  font-weight: bold;
   margin-top: 10px;
   margin-left: 160px;
   border: 1px solid $color-bleu;
   border-radius: 3px;
-  width: 70px;
-  padding: 5px 5px;
+  width: 80px;
+  height: 25px;
+}
+.nouveau p {
+  color: rgb(33, 126, 53);
+  font-weight: bold;
+  align-items: center;
+  padding-top: 2px;
 }
