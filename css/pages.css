@@ -387,19 +387,13 @@ header img {
 
 .menu__coeurs .fas {
   position: absolute;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-size: cover;
-  color: transparent;
+  opacity: 0;
 }
 
 .menu__coeurs .fas:hover {
   position: absolute;
-  background-color: #9356dc;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-size: cover;
-  color: transparent;
+  opacity: 1;
+  color: #9356dc;
 }
 
 .carte {
@@ -492,19 +486,17 @@ h5:hover {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 100px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition-duration: 0.7s;
-          transition-duration: 0.7s;
 }
 
 .carte:hover .coche {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
   background-color: #99e2d0;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+  -webkit-animation-iteration-count: 0;
+          animation-iteration-count: 0;
 }
 
-.carte:hover .validation .fas {
+.carte:hover .fas {
   opacity: 1;
   -webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -551,7 +543,7 @@ button:hover {
   opacity: 0.7;
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 900px) {
   /* HEADER */
   header {
     height: 30px;
@@ -618,16 +610,6 @@ button:hover {
   }
   footer i {
     padding-right: 10px;
-  }
-}
-
-/* display cartes */
-@media only screen and (min-width: 415px) and (max-width: 885px) {
-  .ecran-large {
-    height: auto;
-  }
-  .carte {
-    height: auto;
   }
 }
 /*# sourceMappingURL=pages.css.map */

@@ -26,10 +26,12 @@
     }
   }
 
-  #fonctionnement {
+  #fonctionnement,
+  #restaurants {
     h3 {
       text-align: left;
       margin-bottom: 20px;
+      margin-left: 25px;
     }
     .bouton {
       width: 90%;
@@ -39,6 +41,7 @@
   /* LISTE DES RESTAURANTS */
   .carte {
     margin-bottom: 20px;
+    width: 90%;
 
     h3 {
       margin-left: 10px;

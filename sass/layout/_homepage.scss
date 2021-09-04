@@ -97,17 +97,11 @@
     .fas {
       position: absolute;
       padding-left: 29px;
-      background-clip: text;
-      -webkit-background-clip: text;
-      background-size: cover;
-      color: transparent;
+      opacity: 0;
 
       &:hover {
-        background-color: $color-violet;
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-size: cover;
-        color: transparent;
+        color: $color-violet;
+        opacity: 1;
       }
     }
   }
@@ -126,18 +120,12 @@
     .fas {
       position: absolute;
       margin-left: 29px;
-      background-clip: text;
-      -webkit-background-clip: text;
-      background-size: cover;
-      color: transparent;
+      opacity: 0;
 
       &:hover {
-        background-color: $color-violet;
+        color: $color-violet;
         margin-left: 29px;
-        background-clip: text;
-        -webkit-background-clip: text;
-        background-size: cover;
-        color: transparent;
+        opacity: 1;
       }
     }
   }

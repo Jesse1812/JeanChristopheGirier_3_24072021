@@ -120,18 +120,12 @@ header {
 }
 .menu__coeurs .fas {
   position: absolute;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-size: cover;
-  color: transparent;
+  opacity: 0;
 }
 .menu__coeurs .fas:hover {
   position: absolute;
-  background-color: $color-violet;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-size: cover;
-  color: transparent;
+  opacity: 1;
+  color: $color-violet;
 }
 .carte {
   cursor: pointer;
@@ -196,14 +190,13 @@ h5 {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  transform: rotate(180deg);
-  transition-duration: 0.7s;
 }
 .carte:hover .coche {
-  transform: rotate(0);
   background-color: $color-bleu;
+  transition-duration: 1.5s;
+  animation-iteration-count: 0;
 }
-.carte:hover .validation .fas {
+.carte:hover .fas {
   opacity: 1;
   -webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -243,7 +236,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 900px) {
   /* HEADER */
   header {
     height: 30px;
@@ -316,15 +309,5 @@ button {
     i {
       padding-right: 10px;
     }
-  }
-}
-
-/* display cartes */
-@media only screen and (min-width: 415px) and (max-width: 885px) {
-  .ecran-large {
-    height: auto;
-  }
-  .carte {
-    height: auto;
   }
 }

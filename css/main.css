@@ -214,7 +214,7 @@ footer {
 
 * {
   width: 100%;
-  margin: 0;
+  margin: 0px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -235,7 +235,7 @@ h2 {
 h3 {
   font-size: 1em;
   font-weight: bold;
-  margin: 10px 0 10px 5px;
+  margin: 10px 0 10px 0;
   text-align: center;
   margin-bottom: 25px;
 }
@@ -471,18 +471,12 @@ footer a:link {
 .carte .coeur .fas {
   position: absolute;
   padding-left: 29px;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-size: cover;
-  color: transparent;
+  opacity: 0;
 }
 
 .carte .coeur .fas:hover {
-  background-color: #9356dc;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-size: cover;
-  color: transparent;
+  color: #9356dc;
+  opacity: 1;
 }
 
 .carte .coeur-nouveau {
@@ -503,19 +497,13 @@ footer a:link {
 .carte .coeur-nouveau .fas {
   position: absolute;
   margin-left: 29px;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-size: cover;
-  color: transparent;
+  opacity: 0;
 }
 
 .carte .coeur-nouveau .fas:hover {
-  background-color: #9356dc;
+  color: #9356dc;
   margin-left: 29px;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-size: cover;
-  color: transparent;
+  opacity: 1;
 }
 
 .pleine-largeur {
@@ -601,16 +589,20 @@ footer a:link {
     width: 5%;
     height: 5%;
   }
-  #fonctionnement h3 {
+  #fonctionnement h3,
+  #restaurants h3 {
     text-align: left;
     margin-bottom: 20px;
+    margin-left: 25px;
   }
-  #fonctionnement .bouton {
+  #fonctionnement .bouton,
+  #restaurants .bouton {
     width: 90%;
   }
   /* LISTE DES RESTAURANTS */
   .carte {
     margin-bottom: 20px;
+    width: 90%;
   }
   .carte h3 {
     margin-left: 10px;
