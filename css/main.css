@@ -212,6 +212,28 @@ footer {
           animation: progress 6s;
 }
 
+/* coche qui tourne*/
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
 * {
   width: 100%;
   margin: 0px;
@@ -445,12 +467,7 @@ footer a:link {
   margin-bottom: 10px;
 }
 
-.carte .description {
-  width: 70%;
-}
-
 .carte .description-nouveau {
-  width: 70%;
   margin-top: 155px;
 }
 
@@ -470,7 +487,7 @@ footer a:link {
 
 .carte .coeur .fas {
   position: absolute;
-  padding-left: 29px;
+  margin-left: 12px;
   opacity: 0;
 }
 
@@ -496,13 +513,12 @@ footer a:link {
 
 .carte .coeur-nouveau .fas {
   position: absolute;
-  margin-left: 29px;
+  margin-left: 12px;
   opacity: 0;
 }
 
 .carte .coeur-nouveau .fas:hover {
   color: #9356dc;
-  margin-left: 29px;
   opacity: 1;
 }
 
@@ -607,7 +623,6 @@ footer a:link {
   }
   /* LISTE DES RESTAURANTS */
   .carte {
-    margin-bottom: 20px;
     width: 90%;
   }
   .carte h3 {
@@ -630,6 +645,12 @@ footer a:link {
   }
   .nouveau {
     margin-left: 70%;
+  }
+  .description {
+    width: 145%;
+  }
+  .description-nouveau {
+    width: 145%;
   }
   /* FOOTER */
   footer {

@@ -40,7 +40,6 @@
 
   /* LISTE DES RESTAURANTS */
   .carte {
-    margin-bottom: 20px;
     width: 90%;
 
     h3 {
@@ -66,7 +65,12 @@
   .nouveau {
     margin-left: 70%;
   }
-
+  .description {
+    width: 145%;
+  }
+  .description-nouveau {
+    width: 145%;
+  }
   /* FOOTER */
   footer {
     width: 100%;

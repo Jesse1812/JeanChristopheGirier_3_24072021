@@ -76,11 +76,8 @@
     margin-left: 10px;
     margin-bottom: 10px;
   }
-  .description {
-    width: 70%;
-  }
+
   .description-nouveau {
-    width: 70%;
     margin-top: 155px;
   }
   .coeur {
@@ -96,7 +93,7 @@
 
     .fas {
       position: absolute;
-      padding-left: 29px;
+      margin-left: 12px;
       opacity: 0;
 
       &:hover {
@@ -119,12 +116,11 @@
 
     .fas {
       position: absolute;
-      margin-left: 29px;
+      margin-left: 12px;
       opacity: 0;
 
       &:hover {
         color: $color-violet;
-        margin-left: 29px;
         opacity: 1;
       }
     }

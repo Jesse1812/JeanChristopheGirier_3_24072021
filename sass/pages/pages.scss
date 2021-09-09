@@ -181,7 +181,7 @@ h5 {
     align-items: center;
     display: flex;
     opacity: 0;
-    padding: 30%;
+    padding: 35%;
   }
 }
 .coche {
@@ -189,7 +189,7 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 100px;
+  border-radius: 10px;
 }
 .carte:hover .coche {
   background-color: $color-bleu;
@@ -199,7 +199,8 @@ h5 {
 .carte:hover .fas {
   opacity: 1;
   -webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
+    rotate 0.5s;
 }
 .carte:hover .prix {
   -webkit-animation: slide-left-prix 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
