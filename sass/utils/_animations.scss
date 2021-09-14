@@ -175,13 +175,3 @@ footer {
 #desserts {
   animation: progress 6s;
 }
-
-/* coche qui tourne*/
-@keyframes rotate {
-  0% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}

@@ -44,14 +44,21 @@
     font-size: 1em;
     margin-bottom: 1px;
   }
-
   .bouton {
-    width: 30%;
+    width: 25%;
     margin: auto;
+    i {
+      text-align: left;
+      margin-left: 20px;
+      width: 15%;
+    }
+    span {
+      text-align: left;
+    }
   }
-  &:hover i {
-    color: $color-violet;
-  }
+}
+.bouton:hover i {
+  color: $color-violet;
 }
 
 /* LISTE DES RESTAURANTS */
