@@ -409,7 +409,7 @@ footer a:link {
 }
 
 #fonctionnement .bouton {
-  width: 25%;
+  width: 30%;
   margin: auto;
 }
 
@@ -623,10 +623,10 @@ footer a:link {
     margin-bottom: 10px;
   }
   .carte .coeur-nouveau .fas {
-    margin-left: 33px;
+    margin-left: 10%;
   }
   .carte .coeur .fas {
-    margin-left: 33px;
+    margin-left: 10%;
   }
   #restaurants h3 {
     text-align: left;
